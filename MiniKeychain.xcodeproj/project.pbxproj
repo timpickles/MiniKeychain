@@ -11,6 +11,11 @@
 		14117E6E1D6508280077AE7A /* MiniKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14117E6D1D6508280077AE7A /* MiniKeychainTests.swift */; };
 		14117E701D6508280077AE7A /* MiniKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 14117E621D6508280077AE7A /* MiniKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14117E7A1D650A710077AE7A /* MiniKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14117E791D650A710077AE7A /* MiniKeychain.swift */; };
+		14437B9D1D652E9800DAAAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14437B9C1D652E9800DAAAA8 /* AppDelegate.swift */; };
+		14437B9F1D652E9800DAAAA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14437B9E1D652E9800DAAAA8 /* ViewController.swift */; };
+		14437BA21D652E9800DAAAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14437BA01D652E9800DAAAA8 /* Main.storyboard */; };
+		14437BA41D652E9800DAAAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14437BA31D652E9800DAAAA8 /* Assets.xcassets */; };
+		14437BA71D652E9800DAAAA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14437BA51D652E9800DAAAA8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 14117E5E1D6508280077AE7A;
 			remoteInfo = MiniKeychain;
+		};
+		14437BAC1D652EA300DAAAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14117E561D6508280077AE7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14437B991D652E9800DAAAA8;
+			remoteInfo = TestHost;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -31,6 +43,14 @@
 		14117E6D1D6508280077AE7A /* MiniKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniKeychainTests.swift; sourceTree = "<group>"; };
 		14117E6F1D6508280077AE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14117E791D650A710077AE7A /* MiniKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniKeychain.swift; sourceTree = "<group>"; };
+		14437B9A1D652E9800DAAAA8 /* TestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14437B9C1D652E9800DAAAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14437B9E1D652E9800DAAAA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14437BA11D652E9800DAAAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14437BA31D652E9800DAAAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14437BA61D652E9800DAAAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14437BA81D652E9800DAAAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14437BAE1D652EE300DAAAA8 /* TestHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestHost.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14437B971D652E9800DAAAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +84,7 @@
 			children = (
 				14117E611D6508280077AE7A /* MiniKeychain */,
 				14117E6C1D6508280077AE7A /* MiniKeychainTests */,
+				14437B9B1D652E9800DAAAA8 /* TestHost */,
 				14117E601D6508280077AE7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +94,7 @@
 			children = (
 				14117E5F1D6508280077AE7A /* MiniKeychain.framework */,
 				14117E681D6508280077AE7A /* MiniKeychainTests.xctest */,
+				14437B9A1D652E9800DAAAA8 /* TestHost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +116,20 @@
 				14117E6F1D6508280077AE7A /* Info.plist */,
 			);
 			path = MiniKeychainTests;
+			sourceTree = "<group>";
+		};
+		14437B9B1D652E9800DAAAA8 /* TestHost */ = {
+			isa = PBXGroup;
+			children = (
+				14437BAE1D652EE300DAAAA8 /* TestHost.entitlements */,
+				14437B9C1D652E9800DAAAA8 /* AppDelegate.swift */,
+				14437B9E1D652E9800DAAAA8 /* ViewController.swift */,
+				14437BA01D652E9800DAAAA8 /* Main.storyboard */,
+				14437BA31D652E9800DAAAA8 /* Assets.xcassets */,
+				14437BA51D652E9800DAAAA8 /* LaunchScreen.storyboard */,
+				14437BA81D652E9800DAAAA8 /* Info.plist */,
+			);
+			path = TestHost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,11 +176,29 @@
 			);
 			dependencies = (
 				14117E6B1D6508280077AE7A /* PBXTargetDependency */,
+				14437BAD1D652EA300DAAAA8 /* PBXTargetDependency */,
 			);
 			name = MiniKeychainTests;
 			productName = MiniKeychainTests;
 			productReference = 14117E681D6508280077AE7A /* MiniKeychainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14437B991D652E9800DAAAA8 /* TestHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14437BAB1D652E9800DAAAA8 /* Build configuration list for PBXNativeTarget "TestHost" */;
+			buildPhases = (
+				14437B961D652E9800DAAAA8 /* Sources */,
+				14437B971D652E9800DAAAA8 /* Frameworks */,
+				14437B981D652E9800DAAAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestHost;
+			productName = TestHost;
+			productReference = 14437B9A1D652E9800DAAAA8 /* TestHost.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -159,6 +220,17 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JP866VWWSD;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 14437B991D652E9800DAAAA8;
+					};
+					14437B991D652E9800DAAAA8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JP866VWWSD;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -168,6 +240,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 14117E551D6508280077AE7A;
 			productRefGroup = 14117E601D6508280077AE7A /* Products */;
@@ -176,6 +249,7 @@
 			targets = (
 				14117E5E1D6508280077AE7A /* MiniKeychain */,
 				14117E671D6508280077AE7A /* MiniKeychainTests */,
+				14437B991D652E9800DAAAA8 /* TestHost */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +266,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14437B981D652E9800DAAAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14437BA71D652E9800DAAAA8 /* LaunchScreen.storyboard in Resources */,
+				14437BA41D652E9800DAAAA8 /* Assets.xcassets in Resources */,
+				14437BA21D652E9800DAAAA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +298,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14437B961D652E9800DAAAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14437B9F1D652E9800DAAAA8 /* ViewController.swift in Sources */,
+				14437B9D1D652E9800DAAAA8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -222,7 +315,31 @@
 			target = 14117E5E1D6508280077AE7A /* MiniKeychain */;
 			targetProxy = 14117E6A1D6508280077AE7A /* PBXContainerItemProxy */;
 		};
+		14437BAD1D652EA300DAAAA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14437B991D652E9800DAAAA8 /* TestHost */;
+			targetProxy = 14437BAC1D652EA300DAAAA8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14437BA01D652E9800DAAAA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14437BA11D652E9800DAAAA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14437BA51D652E9800DAAAA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14437BA61D652E9800DAAAA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		14117E711D6508280077AE7A /* Debug */ = {
@@ -375,6 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.MiniKeychainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
 			};
 			name = Debug;
 		};
@@ -386,6 +504,35 @@
 				INFOPLIST_FILE = MiniKeychainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.MiniKeychainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
+			};
+			name = Release;
+		};
+		14437BA91D652E9800DAAAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestHost/TestHost.entitlements;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				INFOPLIST_FILE = TestHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.TestHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		14437BAA1D652E9800DAAAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestHost/TestHost.entitlements;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				INFOPLIST_FILE = TestHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.TestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -410,12 +557,22 @@
 				14117E751D6508280077AE7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14117E761D6508280077AE7A /* Build configuration list for PBXNativeTarget "MiniKeychainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14117E771D6508280077AE7A /* Debug */,
 				14117E781D6508280077AE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14437BAB1D652E9800DAAAA8 /* Build configuration list for PBXNativeTarget "TestHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14437BA91D652E9800DAAAA8 /* Debug */,
+				14437BAA1D652E9800DAAAA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

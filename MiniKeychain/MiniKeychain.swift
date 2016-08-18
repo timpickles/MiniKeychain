@@ -12,6 +12,11 @@ import Security
 class MiniKeychain {
     let service: String?
     let accessGroup: String?
+
+    public init() {
+        self.service = nil
+        self.accessGroup = nil
+    }
     
     public init(service: String) {
         self.service = service
