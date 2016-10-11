@@ -46,7 +46,7 @@ class MiniKeychain {
         // Access group is not supported on any simulators.
 #if (!arch(i386) && !arch(x86_64)) || (!os(iOS) && !os(watchOS) && !os(tvOS))
         if let accessGroup = self.accessGroup {
-            query[AttributeAccessGroup] = accessGroup
+            query[kSecAttrAccessGroup as String] = accessGroup
         }
 #endif
         return query
