@@ -6,7 +6,11 @@
 //  Copyright © 2016年 sonson. All rights reserved.
 //
 
-import UIKit
+#if os(iOS) || os(tvOS)
+    import UIKit
+#elseif os(OSX)
+#endif
+
 import Security
 
 class MiniKeychain {
