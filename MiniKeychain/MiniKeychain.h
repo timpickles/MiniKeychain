@@ -6,7 +6,8 @@
 //  Copyright © 2016年 sonson. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
 
 //! Project version number for MiniKeychain.
 FOUNDATION_EXPORT double MiniKeychainVersionNumber;
@@ -15,5 +16,3 @@ FOUNDATION_EXPORT double MiniKeychainVersionNumber;
 FOUNDATION_EXPORT const unsigned char MiniKeychainVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MiniKeychain/PublicHeader.h>
-
-
