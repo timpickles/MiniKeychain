@@ -73,7 +73,7 @@ class MiniKeychain {
         }
     }
     
-    public func data(of key: String) throws -> Data  {
+    public func data(of key: String) throws -> Data {
         var query = getDefaultQuery()
         query[kSecAttrAccount as String] = key
         query[kSecReturnData as String] = kCFBooleanTrue
@@ -83,7 +83,7 @@ class MiniKeychain {
             query[kSecAttrService as String] = service
         }
         
-        var result :AnyObject?
+        var result: AnyObject?
         
         let status = withUnsafeMutablePointer(to: &result) { SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0)) }
         
@@ -112,7 +112,7 @@ class MiniKeychain {
             query[kSecAttrService as String] = service
         }
         
-        var result :AnyObject?
+        var result: AnyObject?
         
         let status = withUnsafeMutablePointer(to: &result) { SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0)) }
         
@@ -127,7 +127,7 @@ class MiniKeychain {
         case noErr:
             if let dictionaries = result as? [[String: Any]] {
                 return dictionaries.flatMap({$0["acct"] as? String})
-            } else  {
+            } else {
                 let error = NSError(domain: "a", code: Int(Status.unexpectedError.rawValue), userInfo: [NSLocalizedDescriptionKey: ""])
                 throw error
             }
@@ -1386,4 +1386,3 @@ extension Status: RawRepresentable, CustomStringConvertible {
         }
     }
 }
-
