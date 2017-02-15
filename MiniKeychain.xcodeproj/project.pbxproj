@@ -150,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14117E731D6508280077AE7A /* Build configuration list for PBXNativeTarget "MiniKeychain" */;
 			buildPhases = (
+				1436AE001E5454A500399707 /* Swiftlint */,
 				14117E5A1D6508280077AE7A /* Sources */,
 				14117E5B1D6508280077AE7A /* Frameworks */,
 				14117E5C1D6508280077AE7A /* Headers */,
@@ -168,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14117E761D6508280077AE7A /* Build configuration list for PBXNativeTarget "MiniKeychainTests" */;
 			buildPhases = (
+				1436AE011E5454B800399707 /* Swiftlint */,
 				14117E641D6508280077AE7A /* Sources */,
 				14117E651D6508280077AE7A /* Frameworks */,
 				14117E661D6508280077AE7A /* Resources */,
@@ -280,6 +282,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1436AE001E5454A500399707 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\necho \"SwiftLint\"\nswiftlint autocorrect\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		1436AE011E5454B800399707 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\necho \"SwiftLint\"\nswiftlint autocorrect\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14117E5A1D6508280077AE7A /* Sources */ = {
