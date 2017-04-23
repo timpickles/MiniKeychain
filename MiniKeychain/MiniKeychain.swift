@@ -14,7 +14,7 @@
 
 import Security
 
-class MiniKeychain {
+public class MiniKeychain {
     let service: String?
     let accessGroup: String?
 
@@ -42,7 +42,7 @@ class MiniKeychain {
         self.accessGroup = accessGroup
     }
 
-    func getDefaultQuery() -> [String: Any] {
+    private func getDefaultQuery() -> [String: Any] {
         var query: [String: Any] = [kSecClass as String: kSecClassGenericPassword as String]
         if let service = self.service {
             query[kSecAttrService as String] = service
