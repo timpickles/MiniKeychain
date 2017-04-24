@@ -65,12 +65,9 @@ public class MiniKeychain {
 
         SecItemDelete(query as CFDictionary)
 
-        let status: OSStatus = SecItemAdd(query as CFDictionary, nil)
-        let message = Status(status: status).description
+        let status = SecItemAdd(query as CFDictionary, nil)
         if  status != noErr {
-            let error = NSError(domain: "a", code: Int(status), userInfo: [NSLocalizedDescriptionKey: message])
-            print("OSStatus error:[\(error.code)] \(error.localizedDescription)")
-            throw error
+            throw Status(status: status)
         }
     }
 
@@ -89,17 +86,10 @@ public class MiniKeychain {
         let status = withUnsafeMutablePointer(to: &result) { SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0)) }
 
         if status == noErr {
-            if let data = result as? Data {
-                return data
-            } else {
-                let error = NSError(domain: "a", code: Int(1), userInfo: [NSLocalizedDescriptionKey: "a"])
-                throw error
-            }
+            guard let data = result as? Data else { throw Status.unexpectedError }
+            return data
         } else {
-            let message = Status(status: status).description
-            let error = NSError(domain: "a", code: Int(status), userInfo: [NSLocalizedDescriptionKey: message])
-            print("OSStatus error:[\(error.code)] \(error.localizedDescription)")
-            throw error
+            throw Status(status: status)
         }
     }
 
@@ -116,24 +106,14 @@ public class MiniKeychain {
         var result: AnyObject?
 
         let status = withUnsafeMutablePointer(to: &result) { SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0)) }
-
-        let message = Status(status: status).description
-
-        let error = NSError(domain: "a", code: Int(status), userInfo: [NSLocalizedDescriptionKey: message])
-        print("OSStatus error:[\(error.code)] \(error.localizedDescription)")
-
         switch status {
         case noErr:
-            if let dictionaries = result as? [[String: Any]] {
-                return dictionaries.flatMap({$0["acct"] as? String})
-            } else {
-                let error = NSError(domain: "a", code: Int(Status.unexpectedError.rawValue), userInfo: [NSLocalizedDescriptionKey: ""])
-                throw error
-            }
+            guard let dictionaries = result as? [[String: Any]] else { throw Status.unexpectedError }
+            return dictionaries.flatMap({$0["acct"] as? String})
         case errSecItemNotFound:
             return []
         default:
-            throw error
+            throw Status(status: status)
         }
     }
 
@@ -562,6 +542,13 @@ public enum Status: OSStatus, Error {
     case timestampRevocationWarning         = -67897
     case timestampRevocationNotification    = -67898
     case unexpectedError                    = -99999
+
+//    public static func status(with osstatus: OSStatus) -> Status {
+//        if let r = Status(rawValue: osstatus) {
+//            return r
+//        }
+//        return Status.unexpectedError
+//    }
 }
 
 extension Status: RawRepresentable, CustomStringConvertible {
