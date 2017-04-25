@@ -14,7 +14,7 @@
 
 import Security
 
-public class MiniKeychain {
+public class Keychain {
     let service: String?
     let accessGroup: String?
 
