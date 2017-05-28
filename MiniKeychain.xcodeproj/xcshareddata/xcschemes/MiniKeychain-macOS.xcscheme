@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14117E5E1D6508280077AE7A"
-               BuildableName = "MiniKeychain.framework"
-               BlueprintName = "MiniKeychain"
+               BlueprintIdentifier = "1492BCA21EDAA31000A4470C"
+               BuildableName = "MiniKeychain-macOS.framework"
+               BlueprintName = "MiniKeychain-macOS"
                ReferencedContainer = "container:MiniKeychain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14117E671D6508280077AE7A"
-               BuildableName = "MiniKeychainTests.xctest"
-               BlueprintName = "MiniKeychainTests"
-               ReferencedContainer = "container:MiniKeychain.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14117E5E1D6508280077AE7A"
-            BuildableName = "MiniKeychain.framework"
-            BlueprintName = "MiniKeychain"
-            ReferencedContainer = "container:MiniKeychain.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14117E5E1D6508280077AE7A"
-            BuildableName = "MiniKeychain.framework"
-            BlueprintName = "MiniKeychain"
+            BlueprintIdentifier = "1492BCA21EDAA31000A4470C"
+            BuildableName = "MiniKeychain-macOS.framework"
+            BlueprintName = "MiniKeychain-macOS"
             ReferencedContainer = "container:MiniKeychain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14117E5E1D6508280077AE7A"
-            BuildableName = "MiniKeychain.framework"
-            BlueprintName = "MiniKeychain"
+            BlueprintIdentifier = "1492BCA21EDAA31000A4470C"
+            BuildableName = "MiniKeychain-macOS.framework"
+            BlueprintName = "MiniKeychain-macOS"
             ReferencedContainer = "container:MiniKeychain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
