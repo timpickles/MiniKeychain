@@ -244,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1492BC9D1EDAA1F200A4470C /* Build configuration list for PBXNativeTarget "MiniKeychain-tvOS" */;
 			buildPhases = (
+				146A39611EEF40DD0025E043 /* swiftlint */,
 				1492BC911EDAA1F200A4470C /* Sources */,
 				1492BC921EDAA1F200A4470C /* Frameworks */,
 				1492BC931EDAA1F200A4470C /* Headers */,
@@ -406,6 +407,20 @@
 			inputPaths = (
 			);
 			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\necho \"SwiftLint\"\nswiftlint autocorrect\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		146A39611EEF40DD0025E043 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,6 +844,7 @@
 				1492BC9C1EDAA1F200A4470C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1492BCA81EDAA31000A4470C /* Build configuration list for PBXNativeTarget "MiniKeychain-macOS" */ = {
 			isa = XCConfigurationList;
@@ -837,6 +853,7 @@
 				1492BCAA1EDAA31000A4470C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

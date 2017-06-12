@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1492BCA21EDAA31000A4470C"
-               BuildableName = "MiniKeychain-macOS.framework"
+               BuildableName = "MiniKeychain.framework"
                BlueprintName = "MiniKeychain-macOS"
                ReferencedContainer = "container:MiniKeychain.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1492BCA21EDAA31000A4470C"
-            BuildableName = "MiniKeychain-macOS.framework"
+            BuildableName = "MiniKeychain.framework"
             BlueprintName = "MiniKeychain-macOS"
             ReferencedContainer = "container:MiniKeychain.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1492BCA21EDAA31000A4470C"
-            BuildableName = "MiniKeychain-macOS.framework"
+            BuildableName = "MiniKeychain.framework"
             BlueprintName = "MiniKeychain-macOS"
             ReferencedContainer = "container:MiniKeychain.xcodeproj">
          </BuildableReference>
