@@ -10,11 +10,11 @@ import XCTest
 @testable import MiniKeychain
 
 class MiniKeychainTests: XCTestCase {
-    var keychain: MiniKeychain!
+    var keychain: Keychain!
 
     override func setUp() {
         super.setUp()
-        keychain = MiniKeychain(service: "com.sonson.MiniKeychain")
+        keychain = Keychain(service: "com.sonson.MiniKeychain")
         keychain.clear()
     }
 
