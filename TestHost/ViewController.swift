@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MiniKeychain
 
 class ViewController: UIViewController {
+    let k = MiniKeychain.Keychain()
 
     override func viewDidLoad() {
         super.viewDidLoad()
