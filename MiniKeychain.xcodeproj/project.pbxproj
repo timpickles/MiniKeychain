@@ -20,6 +20,8 @@
 		1492BCAC1EDAA39A00A4470C /* MiniKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14117E791D650A710077AE7A /* MiniKeychain.swift */; };
 		1492BCAD1EDAA39E00A4470C /* MiniKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 14117E621D6508280077AE7A /* MiniKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1492BCAE1EDAA54900A4470C /* MiniKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 14117E621D6508280077AE7A /* MiniKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14F7F0891F7B92D200BD8735 /* MiniKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14117E5F1D6508280077AE7A /* MiniKeychain.framework */; };
+		14F7F08A1F7B92D200BD8735 /* MiniKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14117E5F1D6508280077AE7A /* MiniKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,28 @@
 			remoteGlobalIDString = 14437B991D652E9800DAAAA8;
 			remoteInfo = TestHost;
 		};
+		14F7F08B1F7B92D200BD8735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14117E561D6508280077AE7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14117E5E1D6508280077AE7A;
+			remoteInfo = "MiniKeychain-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14F7F08D1F7B92D200BD8735 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14F7F08A1F7B92D200BD8735 /* MiniKeychain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14117E5F1D6508280077AE7A /* MiniKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MiniKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F7F0891F7B92D200BD8735 /* MiniKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,10 +254,12 @@
 				14437B961D652E9800DAAAA8 /* Sources */,
 				14437B971D652E9800DAAAA8 /* Frameworks */,
 				14437B981D652E9800DAAAA8 /* Resources */,
+				14F7F08D1F7B92D200BD8735 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14F7F08C1F7B92D200BD8735 /* PBXTargetDependency */,
 			);
 			name = TestHost;
 			productName = TestHost;
@@ -484,6 +510,11 @@
 			target = 14437B991D652E9800DAAAA8 /* TestHost */;
 			targetProxy = 14437BAC1D652EA300DAAAA8 /* PBXContainerItemProxy */;
 		};
+		14F7F08C1F7B92D200BD8735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14117E5E1D6508280077AE7A /* MiniKeychain-iOS */;
+			targetProxy = 14F7F08B1F7B92D200BD8735 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -691,6 +722,7 @@
 		14437BA91D652E9800DAAAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TestHost/TestHost.entitlements;
 				DEVELOPMENT_TEAM = JP866VWWSD;
@@ -705,6 +737,7 @@
 		14437BAA1D652E9800DAAAA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TestHost/TestHost.entitlements;
 				DEVELOPMENT_TEAM = JP866VWWSD;
