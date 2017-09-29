@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = "A small library to save and restore something from Keychain."
   s.description      = <<-DESC
                          A small library to save and restore something from Keychain.
+                         This library is a subset of Kishikawa's KeychainAccess.
                        DESC
   s.homepage         = "https://github.com/sonsongithub/MiniKeychain"
   s.license          = 'MIT'
