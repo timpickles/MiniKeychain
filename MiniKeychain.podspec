@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MiniKeychain"
-  s.version          = "1.0.0"
+  s.version          = "1.0.7"
   s.summary          = "A small library to save and restore something from Keychain."
   s.description      = <<-DESC
                          A small library to save and restore something from Keychain.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { "sonson" => "yoshida.yuichi@gmail.com" }
   s.source           = {
     :git => "https://github.com/sonsongithub/MiniKeychain.git",
-    :tag => "v#{s.version}"
+    :tag => "#{s.version}"
   }
 
   s.social_media_url = 'https://twitter.com/sonson_twit'
