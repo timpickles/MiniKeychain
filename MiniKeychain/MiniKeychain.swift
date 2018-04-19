@@ -109,7 +109,7 @@ public class Keychain {
         switch status {
         case noErr:
             guard let dictionaries = result as? [[String: Any]] else { throw Status.unexpectedError }
-            return dictionaries.flatMap({$0["acct"] as? String})
+            return dictionaries.compactMap({$0["acct"] as? String})
         case errSecItemNotFound:
             return []
         default:

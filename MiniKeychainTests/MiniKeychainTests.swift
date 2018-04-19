@@ -60,7 +60,7 @@ class MiniKeychainTests: XCTestCase {
         XCTAssert(r)
 
         do {
-            let _ = try keychain.data(of: "account1")
+            _ = try keychain.data(of: "account1")
             XCTFail("Error - account1 has not been deleted.")
         } catch {
             print(error)
