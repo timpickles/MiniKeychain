@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MiniKeychain"
-  s.version          = "1.0.7"
+  s.version          = "1.0.8"
   s.summary          = "A small library to save and restore something from Keychain."
   s.description      = <<-DESC
                          A small library to save and restore something from Keychain.
